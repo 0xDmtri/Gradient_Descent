@@ -89,7 +89,11 @@ class CoordinateGradientDescent:
                 self.iter += 1
                 self.x_path[0][self.iter] = float(self.current_x[0])
                 self.x_path[1][self.iter] = float(self.current_x[1])
-        return self.iter, self.current_x, self.x_path
+                number_of_iters = str("Number of iterations before achieving\
+                                      the minimum: %s" % self.iter)
+                coordinate = str("Coordinates of the\
+                                 minimum: %s" % self.current_x)
+            return number_of_iters, coordinate
 
     @staticmethod
     def graph_full_function(equation):
