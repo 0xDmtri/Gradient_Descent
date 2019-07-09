@@ -1,3 +1,5 @@
+### Part 1: Gradient Descent ###
+
 ## Importance:
 
 Gradient descent is a fundamental optimisation algorithm for machine
@@ -39,7 +41,7 @@ coordinate significantly diverges from global minimum \[0,0\] (table 1).
 
 ## Modifications:
 
-## ## Coordinate Descent:
+# Coordinate Descent:
 
 Coordinate Descent(CD)is a simple algorithm that works in similar
 fashion to gradient descent. In multivariate case, CD minimises function
@@ -49,7 +51,7 @@ minimum as can be seen in fig7, 8. The algorithm, however overshoots the
 gloabal minimum overshoots the global minimum as the partial derivative
 depends on the second function (table 1).
 
-## ## Nesterov's accelerated gradient descent:
+# Nesterov's accelerated gradient descent:
 
 Nesterov's accelerated gradient descent is a modification of the
 momentum gradient descent that takes into the account the gradient at
