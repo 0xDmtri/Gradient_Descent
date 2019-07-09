@@ -1,4 +1,4 @@
-Importance:
+## Importance:
 
 Gradient descent is a fundamental optimisation algorithm for machine
 learning models. Such importance is derived from algorithm versatility
@@ -6,7 +6,7 @@ as it can be applied for virtually any model with no limitations for
 number of functional spaces, simplicity/cheapness of computation
 comparative to algebraic methods is the second reason.
 
-Working principle:
+## Working principle:
 
 Gradient descent general principle is to minimizes the cost function
 which represents error in predictions which in case of linear or
@@ -23,7 +23,7 @@ partial derivative w.r.t second variable, simultaneously. The size of
 the taken step is determined by the learning rate. Procedure is repeated
 until local or global minimum is reached.
 
-Plain Vanilla Testing:
+## Plain Vanilla Testing:
 
 For testing the selected objective function is Tree-Hump Camel function.
 It depends on two variables[^1]; valley shaped (fig.1) and multiple
@@ -37,9 +37,9 @@ after the fourth iteration, 0.001lr (fig 5,6) on the other hand takes
 52869 iterations, yet precision suffers significantly as final
 coordinate significantly diverges from global minimum \[0,0\] (table 1).
 
-Modifications:
+## Modifications:
 
-Coordinate Descent:
+## ## Coordinate Descent:
 
 Coordinate Descent(CD)is a simple algorithm that works in similar
 fashion to gradient descent. In multivariate case, CD minimises function
@@ -49,7 +49,7 @@ minimum as can be seen in fig7, 8. The algorithm, however overshoots the
 gloabal minimum overshoots the global minimum as the partial derivative
 depends on the second function (table 1).
 
-Nesterov's accelerated gradient descent:
+## ## Nesterov's accelerated gradient descent:
 
 Nesterov's accelerated gradient descent is a modification of the
 momentum gradient descent that takes into the account the gradient at
