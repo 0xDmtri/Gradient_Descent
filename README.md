@@ -8,7 +8,7 @@ as it can be applied for virtually any model with no limitations for
 number of functional spaces, simplicity/cheapness of computation
 comparative to algebraic methods is the second reason.
 
-## Working principle:
+## Working principle: 
 
 Gradient descent general principle is to minimizes the cost function
 which represents error in predictions which in case of linear or
