@@ -67,6 +67,9 @@ Nesterov's algorithm with momentum 0.5 and learning rate 0.001 (fig
 11,12). The momentum is too large, the algorithm overshoots and gets
 stuck at the local minima of 0.298638455185163.
 
+| fdf f | fddf |     | dfdfdfdfdfd |     |     |     |     |     |     | dfdfdfdfdfd |
+| ----- | ---- | --- | ----------- | --- | --- | --- | --- | --- | --- | ----------- |
+| dfdfdfdfdfdf      |      |     |             |     |     |     |     |     |     |             |
 
 ---------------------------------------------------------------------------------------------
 Algorithm    Learning   Momentum     Minimum Achieved   Number of   Coordinate
