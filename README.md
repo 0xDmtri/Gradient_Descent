@@ -84,8 +84,36 @@ stuck at the local minima of 0.298638455185163.
 | Nesterov Descent   | 0.0001 | 0.5      | 1.5749150797E-07 | 27536      | [-0.000171, 0.000412]  |
 
 
-![alt text](https://i.ibb.co/hBRY1J5/1-2.jpg)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
+
+
+![Figure 1 and Figure 2](https://i.ibb.co/hBRY1J5/1-2.jpg)
+
+
+![Figure 3 and Figure 3](https://i.ibb.co/VtRDyW8/3-4.jpg)
+
+
+![Figure 4 and Figure 4](https://i.ibb.co/yXWZp70/5-6.jpg)
+
+
+![Figure 5 and Figure 6](https://i.ibb.co/ZxrQ2h5/7-8.jpg)
+
+
+![Figure 7 and Figure 8](https://i.ibb.co/CVDyckc/9-10.jpg)
+
+
+![Figure 9 and Figure 10](https://i.ibb.co/VtRDyW8/3-4.jpg)
+
+
+![Figure 11 and Figure 12](https://i.ibb.co/4fSB78K/11-12.jpg)
+
+
+![Figure 13 and Figure 14](https://i.ibb.co/Bj6223Q/13-14.jpg)
+
+
+![Figure 15 and Figure 16](https://i.ibb.co/y88pjYB/15-16.jpg)
+
+
+![Figure 17 and Figure 18](https://i.ibb.co/Y2V52HS/17-18.jpg)
+
+
+![Figure 19 and Figure 20](https://i.ibb.co/4m6SPD7/19-20.jpg)
