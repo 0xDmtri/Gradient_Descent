@@ -84,7 +84,7 @@ stuck at the local minima of 0.298638455185163.
 | Nesterov Descent   | 0.0001 | 0.5      | 1.5749150797E-07 | 27536      | [-0.000171, 0.000412]  |
 
 
-![alt text](https://ibb.co/McDB5xT)
+![alt text](https://i.ibb.co/hBRY1J5/1-2.jpg)
 ![alt text](http://url/to/img.png)
 ![alt text](http://url/to/img.png)
 ![alt text](http://url/to/img.png)
