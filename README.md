@@ -8,7 +8,7 @@ as it can be applied for virtually any model with no limitations for
 number of functional spaces, simplicity/cheapness of computation
 comparative to algebraic methods is the second reason.
 
-## Working principle: 
+## Working principle:
 
 Gradient descent general principle is to minimizes the cost function
 which represents error in predictions which in case of linear or
@@ -67,62 +67,29 @@ Nesterov's algorithm with momentum 0.5 and learning rate 0.001 (fig
 11,12). The momentum is too large, the algorithm overshoots and gets
 stuck at the local minima of 0.298638455185163.
 
-  Table 1: Gradient Descent results.                                                                                                    
-  ----------------------------------------- --------------- ---------------- ---------------------- ----------------------------------- ----------------------------------------------------
-  Algorithm                                 Learning rate   Momentum value   Minimum achieved       Iteration before reaching minimum   Coordinate
-  Coordinate descent                        0.001           N/A              0.298638442236861      50001                               \[-1.7475523458303008, 0.8737761729151781\]
-  Coordinate descent                        0.0001          N/A              0.65600527778067       56019                               \[-1.9551126481450094, 0.9780561704546871\]
-  Steepest descent                          0.001           N/A              3.14463562151912E-08   6043                                \[-7.621096885624767e-05, 0.00018398955019988027\]
-  Steepest descent                          0.0001          N/A              3.15146133300443E-07   52689                               \[-0.00024126151145191, 0.000582457219095918\]
-  Nesterov's accelerated gradient descent   0.001           0.25             2.35330469490769E-08   4726                                \[-6.59282387e-05, 1.59164812e-04\]
-  Nesterov's accelerated gradient descent   0.0001          0.25             2.3637230802626E-07    40334                               \[-0.00020894, 0.00050444\]
-  Nesterov's accelerated gradient descent   0.001           0.4              1.87519919256049E-08   3938                                \[-5.88513093e-05, 1.42079584e-04\]
-  Nesterov's accelerated gradient descent   0.0001          0.4              1.89039753298109E-07   32693                               \[-0.00018686, 0.00045111\]
-  Nesterov's accelerated gradient descent   0.001           0.5              0.298638455185163      2674                                \[-1.74756367, 0.87389229\]
-  Nesterov's accelerated gradient descent   0.0001          0.5              1.5749150797623E-07    27536                               \[-0.00017055, 0.00041175\]
 
-![](media/image1.png){width="3.3464884076990375in"
-height="3.3464884076990375in"}![](media/image2.png){width="3.3464884076990375in"
-height="3.3464884076990375in"}
+: Table 1: Gradient Descent results.
 
-![](media/image3.png){width="3.345833333333333in"
-height="3.345833333333333in"}![](media/image4.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-![](media/image5.png){width="3.345833333333333in"
-height="3.345833333333333in"}![](media/image6.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-![](media/image7.png){width="3.345833333333333in"
-height="3.345833333333333in"}![](media/image8.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-![](media/image9.png){width="3.345833333333333in"
-height="3.345833333333333in"}![](media/image10.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-![](media/image11.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-![](media/image12.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-![](media/image13.png){width="3.345833333333333in"
-height="3.345833333333333in"}![](media/image14.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-![](media/image15.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-![](media/image16.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-![](media/image10.png){width="3.345833333333333in"
-height="3.345833333333333in"}![](media/image9.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-![](media/image17.png){width="3.345833333333333in"
-height="3.345833333333333in"}![](media/image18.png){width="3.345833333333333in"
-height="3.345833333333333in"}
-
-[^1]: $\mathbf{f(x) = 2}\mathbf{x}_{\mathbf{1}}^{\mathbf{2}}\mathbf{- 1.05}\mathbf{x}_{\mathbf{1}}^{\mathbf{4}}\mathbf{+}\frac{\mathbf{x}_{\mathbf{1}}^{\mathbf{6}}}{\mathbf{6}}\mathbf{+}\mathbf{x}_{\mathbf{1}}\mathbf{x}_{\mathbf{2}}\mathbf{+}\mathbf{x}_{\mathbf{2}}^{\mathbf{2}}$
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+
+| Algorithm          | Learning Rate | Momentum Value     | Minimum Achieved  | Number of Iter.  | Coordinate            |
++====================+===============+====================+===================+==================+=======================+
+| Coordinate Descent | 0.001         | N/A                | 0.29863844223686  | 50001            | [-1.747552, 0.873776] |
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+      
+| Coordinate Descent | 0.0001        | N/A                | 0.65600527778067  | 56019            | [-1.955112, 0.978056] |
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+
+| Steepest Descent   | 0.001         | N/A                | 3.1446356215E-08  | 6041             | [-7.62e-05, 0.000184] |
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+
+| Steepest Descent   | 0.0001        | N/A                | 3.1514613330E-07  | 52689            | [-0.000241, 0.000582] |
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+
+| Nesterov Descent   | 0.001         | 0.25               | 2.3533046949E-08  | 4726             | [-6.59e-05,1.59we-04] |
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+
+| Nesterov Descent   | 0.0001        | 0.25               | 2.3637230802E-07  | 40334            | [-0.000208, 0.000504] |
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+
+| Nesterov Descent   | 0.001         | 0.4                | 1.8751991925E-08  | 3938             | [-5.88e-05, 1.421e-04]|
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+
+| Nesterov Descent   | 0.0001        | 0.4                | 1.8903975329E-07  | 32693            | [-0.000186, 0.000451] |
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+
+| Nesterov Descent   | 0.001         | 0.5                | 0.29863845518516  | 2674             | [-1.747563, 0.873892] |
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+
+| Nesterov Descent   | 0.0001        | 0.5                | 1.5749150797E-07  | 27536            | [-0.000171, 0.000412] |
++--------------------+---------------+--------------------+-------------------+------------------+-----------------------+
