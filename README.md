@@ -68,6 +68,8 @@ Nesterov's algorithm with momentum 0.5 and learning rate 0.001 (fig
 stuck at the local minima of 0.298638455185163.
 
 
+### Table 1: Gradient Descent Results ###
+
 | Algorithm          | LR     | Momentum | Minimum          | Iterations | Coordinate             |
 | ------------------ | ------ | -------- | ---------------- | ---------- | ---------------------- |
 | Coordinate Descent | 0.001  | N/A      | 0.29863844223686 | 50001      | [-1.747552, 0.873776]  |
